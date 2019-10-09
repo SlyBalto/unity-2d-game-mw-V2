@@ -34,5 +34,7 @@ public class CollectableManager : MonoBehaviour
         {
             YouWinMenu.Instance.Show();
         }
+
+        SoundManager.Instance.PlayCoinCollectSound();
     }
 }

@@ -11,6 +11,10 @@ public class YouWinMenu : MonoBehaviour
     public Button nextlevelbutton;
     public Button hidebutton;
 
+    private void Start()
+    {
+        container.SetActive(false);
+    }
     private void OnEnable()
     {
        nextlevelbutton.onClick.AddListener(HandleNextLevelPressed);
